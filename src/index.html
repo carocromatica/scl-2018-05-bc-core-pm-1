@@ -2,12 +2,48 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  
 </head>
 <body>
 
-  <div id="root"></div>
+  
+
+   <div id="container">
+    <header>
+    <h1>Cifrado Cesar</h1>
+    </header>
+
+    <div> 
+      <form>
+          <label for="encode">Escribe tu mensaje para cifrar. No se aceptan emojis ni simbolos @!/: </label> </br>
+           <textarea rows="6">Tu mensaje</textarea>
+             <div class="button">
+               <button type="submit">Aceptar</button>
+             </div>
+      </form>
+    </div>
+
+    <div id=decode>
+      Tu texto codificado
+    </div>
+
+    <div> 
+        <form>
+          <label for="decode">Escribe tu mensaje cifrado </label> </br>
+           <textarea rows="6">Tu mensaje</textarea>
+             <div class="button">
+               <button type="submit">Aceptar</button>
+             </div>
+      </form>
+      </div>
+
+      <div id=encode>
+          Tu texto traducido
+        </div>
+   </div>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
