@@ -1,1 +1,82 @@
 /* Acá va tu código */
+body {
+  background-color:#674172;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+#container {    
+  margin: auto;
+  background-color: white;
+  padding: 2em;
+  border-radius: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vw;
+}
+
+label {font-size: 1vw;}
+
+textarea { 
+  resize: vertical;
+  width: 100%;
+  padding: 5px;
+}
+
+.button {
+  margin: 5px 0 5px 5px; 
+  text-align: center;
+}
+
+button  {
+  background-color: #F39C12;
+  border: none;
+  font-size: 1em;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+
+
+
+#encode { 
+  margin:  1em 0 1em 0 ;
+  padding: 15px;
+  background-color: #FDE3A7;
+}
+
+#decode { 
+  
+  margin: 1em 0 1em 0 ;
+  padding: 15px;
+  background-color: #E4F1FE;
+}
+/*cambio de tamaño de pantalla (responsive)*/
+  
+@media only screen and (max-width: 1920px) {  
+  #container {  width: 40% }
+  
+}  
+
+@media only screen and (max-width: 1044px) { 
+  #container {  width: 60% } 
+
+  h1 {font-size: 6vw;}
+  
+  label {font-size: 4vw;}
+  
+} 
+
+@media only screen and (max-width: 600px) { 
+  #container {  width: 80% } 
+
+  h1 {
+    text-align: center;
+    font-size: 10vw;
+  }
+  
+  label {font-size: 5vw;}
+ 
+} 
+
+  
