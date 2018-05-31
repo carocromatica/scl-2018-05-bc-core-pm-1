@@ -1,8 +1,34 @@
+
 window.cipher = {
-  encode: () => {
-    /* Acá va tu código */
+  encode: (str, key, messageCode) => {
+
+    messageCode:"";
+
+   for ( let i=0; i<str.length;i++){
+      let messageCode = str.charCodeAt(i);
+
+        if (srt >= 65 && str <= 90) {
+        messageCode += String.fromCharCode((str - 65 + key) % 26 + 65);
+
+        return messageCode = document.getElementById("codificado").innerHTML;
+      }
+   }
+
+
   },
   decode: () => {
-    /* Acá va tu código */
+
+    messageCode:"";
+
+    for ( let i=0; i<str.length;i++){
+       let messageCode = str.charCodeAt(i);
+ 
+         if (srt >= 65 && str <= 90) {
+         messageCode += String.fromCharCode((26 - key) % 26 );
+ 
+         return messageCode = document.getElementById("decodificado").innerHTML;
+       }
+    }
+ 
   }
 }
