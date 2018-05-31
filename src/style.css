@@ -48,15 +48,15 @@ button  {
 
 
 
-#encode { 
-  margin: 1em 0 0 0 ;
+.encode { 
+  margin: 3em 0 0 0 ;
   padding: 15px;
   background-color: #FDE3A7;
 }
 
-#decode { 
+.decode { 
   
-  margin: 3.5em 0 0em 0 ;
+  margin: 2em 0 0em 0 ;
   padding: 15px;
   background-color: #E4F1FE;
 
