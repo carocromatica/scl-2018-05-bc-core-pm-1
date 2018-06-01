@@ -15,15 +15,14 @@
     </header>
 
 <div>
-  <form>Llave <input type="text" name="key" id="key">
-    <button type="submit" onclick="key()">Aceptar</button>
+  <form>Llave <input type="number" name="key" id="key">
   </form>
 </div>
 
 <div> 
   <form>
       <label for="encode">Escribe tu mensaje para cifrar. No se aceptan emojis ni simbolos @!/: </label> </br>
-       <textarea rows="6" id="mensaje">Tu mensaje</textarea>
+       <textarea rows="6" id="mensaje" placeholder="Tu mensaje"></textarea>
          <div class="button">
            <button type="submit" onclick="encode()">Codificar</button>
          </div>
@@ -34,11 +33,11 @@
 </div>
 
 <div id="codificado" class="encode">
-  Tu texto codificado debería aparecer aquí
+  
 </div>
 
 <div id="decodificado" class="decode">
-  Tu texto decodificado debería aparecer aquí
+  
  </div>
   
 <script src="cipher.js"></script>
