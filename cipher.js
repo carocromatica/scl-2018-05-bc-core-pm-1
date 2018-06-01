@@ -1,34 +1,31 @@
 
 window.cipher = {
-  encode: (str, key, messageCode) => {
+  encode: (mensajeIngresado, desplazamiento) => {
 
-    messageCode:"";
-
+    codificado:"";
+   
    for ( let i=0; i<str.length;i++){
-      let messageCode = str.charCodeAt(i);
+          
+         let transformacion = mensajeIngresado.charCodeAt(i);
 
-        if (srt >= 65 && str <= 90) {
-        messageCode += String.fromCharCode((str - 65 + key) % 26 + 65);
-
-        return messageCode = document.getElementById("codificado").innerHTML;
-      }
+            if (srt >= 65 && str <= 90) {
+            codificado += String.fromCharCode((transformacion - 65 + key) % 26 + 65);
+     
+          } else if (srt >= 97 && str <= 122) {
+            codificado += String.fromCharCode((transformacion - 65 + key) % 26 + 65);
+       
+         
+          } return codificado;
    }
 
 
   },
-  decode: () => {
+  decode: (str, key) => {
 
-    messageCode:"";
+    messageDecode:"";
+  
 
-    for ( let i=0; i<str.length;i++){
-       let messageCode = str.charCodeAt(i);
- 
-         if (srt >= 65 && str <= 90) {
-         messageCode += String.fromCharCode((26 - key) % 26 );
- 
-         return messageCode = document.getElementById("decodificado").innerHTML;
-       }
-    }
+    
  
   }
 }
