@@ -10,36 +10,37 @@
 
 <body>
 
-
    <div id="container">
-    <header>
-     <h1>Cifrado Cesar</h1>
-    </header>
 
-<div> 
-  <form>
+      <header>
+        <h1>Cifrado Cesar</h1>
+      </header>
 
-      <div>
-          <input id="desplazamiento" type="number"  step="1" value="0">
+      <div> 
+        <form>
+          <div>
+            <input id="desplazamiento" type="number"  step="1" value="0">
+          </div>
+
+          <textarea id="mensajeIngresado" rows="6" placeholder="Tu mensaje"></textarea>
+          <input type="button"  value ="codifica" onclick="encode()"/> 
           
-         </div>
 
-       <textarea id="mensajeIngresado" rows="6" placeholder="Tu mensaje"></textarea>
-         
-           <button  onclick="encode()">Codificar</button>
-           <div id="codificado" class="encode">
-  
-        </div>
+          <textarea id="mensajeCodificado" rows="6" placeholder="Tu mensaje"></textarea>
+          <input type="button"  value ="decodifica" onclick="decode()"/>   
+          
+
+          </form>
+
+          </div>
+
+  <div id="codificado" class="encode"> <!--codificado debería salir aqui --> </div>
         
-        <div id="decodificado" class="decode">
-          
-         </div>
-
-  </form>
+  <div id="decodificado" class="decode"> <!--decodificado debería salir aqui --> </div>
 
 </div>
 
- </div>
+
   
 
  <script src="cipher.js"></script>
