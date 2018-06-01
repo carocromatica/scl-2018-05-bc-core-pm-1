@@ -2,27 +2,27 @@
 window.cipher = {
   encode: (mensajeIngresado, desplazamiento) => {
 
-    codificado:"";
+   let codificado='';
    
-   for ( let i=0; i<str.length;i++){
+   for ( let i=0; i<mensajeIngresado.length;i++){
           
          let transformacion = mensajeIngresado.charCodeAt(i);
 
-            if (srt >= 65 && str <= 90) {
-            codificado += String.fromCharCode((transformacion - 65 + key) % 26 + 65);
+            if (mensajeIngresado >=65 && mensajeIngresado <=90) {
+            codificado += String.fromCharCode((transformacion -65+key) % 26+65);
      
-          } else if (srt >= 97 && str <= 122) {
-            codificado += String.fromCharCode((transformacion - 65 + key) % 26 + 65);
+          } else if (mensajeIngresado >=97 && mensajeIngresado <=122) {
+            codificado += String.fromCharCode((transformacion -97+key) % 26+97);
        
-         
+           
           } return codificado;
    }
 
 
   },
-  decode: (str, key) => {
+  decode: () => {
 
-    messageDecode:"";
+    
   
 
     
