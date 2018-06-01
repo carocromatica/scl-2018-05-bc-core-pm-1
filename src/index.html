@@ -5,43 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" /> 
+
 </head>
 
 <body>
+
 
    <div id="container">
     <header>
      <h1>Cifrado Cesar</h1>
     </header>
 
-<div>
-  <form>Llave <input type="number" name="key" id="key">
-  </form>
-</div>
-
 <div> 
   <form>
-      <label for="encode">Escribe tu mensaje para cifrar. No se aceptan emojis ni simbolos @!/: </label> </br>
-       <textarea rows="6" id="mensaje" placeholder="Tu mensaje"></textarea>
-         <div class="button">
-           <button type="submit" onclick="encode()">Codificar</button>
+
+      <div>
+          <input id="desplazamiento" type="number"  step="1" value="0">
+          
          </div>
-         <div class="button_right">
-       
+
+       <textarea id="mensajeIngresado" rows="6" placeholder="Tu mensaje"></textarea>
+         
+           <button  onclick="encode()">Codificar</button>
+           <div id="codificado" class="encode">
+  
         </div>
+        
+        <div id="decodificado" class="decode">
+          
+         </div>
+
   </form>
+
 </div>
 
-<div id="codificado" class="encode">
-  
-</div>
-
-<div id="decodificado" class="decode">
-  
  </div>
   
-<script src="cipher.js"></script>
-<script src="index.js"></script>
+
+ <script src="cipher.js"></script>
+ <script src="index.js"></script>
 
 </body>
 </html>

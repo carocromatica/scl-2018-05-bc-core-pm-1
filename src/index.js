@@ -1,13 +1,9 @@
 
-
     function encode() {
-        let str = document.getElementById("mensaje").value; 
-        let key = parseInt(document.getElementById("key").value);
-        let messageCode= window.cipher.encode(str,key);
+        let mensajeIngresado = document.getElementById("mensajeIngresado").value; 
+        let desplazamiento = parseInt(document.getElementById("desplazamiento").value);
+        let messageCode= window.cipher.encode(mensajeIngresado,desplazamiento);
             document.getElementById("codificado").innerHTML;
     }
 
-    function decode() {
-        let str = document.getElementById("mensaje").value; 
-        let key = document.getElementById("key").value;    
-    }
+  
