@@ -21,9 +21,9 @@ window.cipher = {
 
 
   },
+  
   decode: (mensajeCodificado,desplazamiento) => {
 
-     
     let codificado="";
    
     for ( let i=0; i<mensajeCodificado.length;i++){ //bucle
