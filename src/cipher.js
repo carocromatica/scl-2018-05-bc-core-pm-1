@@ -31,10 +31,10 @@ window.cipher = {
            let transformacion2 = mensajeCodificado.charCodeAt(i); //convierte mensaje en ascii
  
              if (transformacion2 >= 65 && transformacion2 <= 90) { 
-             codificado += String.fromCharCode((transformacion2 -65 - desplazamiento) %26+65); 
+             codificado += String.fromCharCode((transformacion2 +65 - desplazamiento) %26+65); 
             
            }else if(transformacion2 >= 97 && transformacion2 <= 122){
-             codificado += String.fromCharCode((transformacion2 -97 - desplazamiento) %26+97);
+             codificado += String.fromCharCode((transformacion2 +97 - desplazamiento) %26+97);
      
       
            } else { codificado += String.fromCharCode(transformacion2); // para otros caracteres
